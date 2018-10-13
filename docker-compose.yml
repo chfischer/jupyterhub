@@ -1,0 +1,10 @@
+version: "3"
+services:
+  hub:
+    build: .
+    ports:
+      - 8000:8000
+    volumes:
+      - /etc/passwd:/etc/passwd
+      - /etc/shadow:/etc/shadow
+      - /home:/home
